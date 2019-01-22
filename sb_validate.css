@@ -13,3 +13,16 @@
 
 
 /* Validation Styles */
+
+/* For every input that has a focus but does not target the radio types, it has a background color of an rgb triplet, for the valid and invalid, I just put the attributes in there and also put in an image by a url that has no tiling and it positioned to the right. */
+input:focus:not([type='radio']) {
+    background-color: rgb(255, 215, 165);
+}
+
+input:focus:valid:not([type='radio']) {
+    background: rgb(215, 255, 215) url(sb_valid.png) no-repeat right;
+}
+
+input:focus:invalid:not([type='radio']) {
+    background: rgb(255, 245, 215) url(sb_invalid.png) no-repeat right;
+}
